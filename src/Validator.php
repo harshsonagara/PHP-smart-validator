@@ -3,6 +3,8 @@
 namespace SmartValidator;
 
 use SmartValidator\Result;
+use SmartValidator\RuleParser;
+use SmartValidator\RuleEngine;
 
 class Validator
 {
@@ -27,11 +29,28 @@ class Validator
     }
 
     /**
-     * Run validation (logic will come later)
+     * Run validation and return Result
      */
     public function validate(): Result
     {
-        // no real validation yet
-        return new Result([]);
+        $allErrors = [];
+
+        foreach ($this->rules as $field => $ruleString) {
+            // Get value or null if missing
+            $value = $this->data[$field] ?? null;
+
+            // Parse rules string
+            $parsedRules = RuleParser::parse($ruleString);
+
+            // Run rules for this field
+            $fieldErrors = RuleEngine::run($field, $value, $parsedRules);
+
+            // Collect errors
+            if (!empty($fieldErrors)) {
+                $allErrors[$field] = $fieldErrors;
+            }
+        }
+
+        return new Result($allErrors);
     }
 }
