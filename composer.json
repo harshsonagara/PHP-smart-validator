@@ -1,0 +1,8 @@
+{
+  "name": "harsh/php-smart-validator",
+  "autoload": {
+    "psr-4": {
+      "SmartValidator\\": "src/"
+    }
+  }
+}
