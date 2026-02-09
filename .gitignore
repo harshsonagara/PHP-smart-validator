@@ -3,3 +3,6 @@
 /.vscode
 composer.lock
 /test.php
+
+
+.phpunit.result.cache
