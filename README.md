@@ -1,5 +1,6 @@
-
 # PHP SmartValidator
+
+[![Tests](https://github.com/harsh/php-smart-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/harsh/php-smart-validator/actions/workflows/tests.yml)
 
 A lightweight, framework-agnostic validation library for PHP.
 
@@ -22,7 +23,7 @@ Install via Composer:
 
 ```bash
 composer require harsh/php-smart-validator
-````
+```
 
 ---
 
@@ -94,8 +95,8 @@ $rules = [
 ];
 ```
 
-* Empty value → passes
-* Invalid email → fails
+- Empty value → passes
+- Invalid email → fails
 
 To enforce presence:
 
@@ -145,4 +146,3 @@ git push origin v0.1.0
 ## License
 
 MIT License
-
