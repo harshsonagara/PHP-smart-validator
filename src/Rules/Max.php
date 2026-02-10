@@ -13,7 +13,7 @@ class Max implements RuleInterface
 
     public function passes(string $field, $value): bool
     {
-        // Let required rule handle empty cases
+        // handle empty cases
         if ($value === null || $value === '') {
             return true;
         }
@@ -30,7 +30,7 @@ class Max implements RuleInterface
             return count($value) <= $this->max;
         }
 
-        // Unsupported type → fail safe
+        // Unsupported type → fail 
         return false;
     }
 
