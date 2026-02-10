@@ -1,9 +1,4 @@
-Here you go — **only the `README.md`**, clean, complete, and production-ready.
-Copy–paste this as-is. No extra commentary.
 
----
-
-````md
 # PHP SmartValidator
 
 A lightweight, framework-agnostic validation library for PHP.
@@ -151,6 +146,3 @@ git push origin v0.1.0
 
 MIT License
 
-```
-
----
