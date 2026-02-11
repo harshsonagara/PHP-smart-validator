@@ -36,6 +36,6 @@ class Max implements RuleInterface
 
     public function message(string $field): string
     {
-        return "{$field} must be at least {$this->max}";
+        return "{$field} must be at most {$this->max}";
     }
 }
