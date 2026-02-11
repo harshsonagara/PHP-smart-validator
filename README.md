@@ -1,6 +1,6 @@
 # PHP SmartValidator
 
-[![Tests](https://github.com/harshsonagara/php-smart-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/harsh/php-smart-validator/actions/workflows/tests.yml)
+[![Tests](https://github.com/harshsonagara/php-smart-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/harshsonagara/php-smart-validator/actions/workflows/tests.yml)
 
 A lightweight, framework-agnostic validation library for PHP.
 
